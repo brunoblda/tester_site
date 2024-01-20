@@ -16,3 +16,10 @@ async function get_cookies() {
         console.error(error);    
       });    
   };   
+
+iframe.onload = function() {
+   var content = iframe.contentDocument || iframe.contentWindow.document;
+   if (content && content.lastChild) {
+     console.log(content.lastChild.data); // This should give you the base64 string
+   }
+};
