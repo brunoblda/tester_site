@@ -1,5 +1,5 @@
 async function get_cookies() {
-  const response = await fetch("https://gtdedge-hello-world.booking.com/echo", {method: "GET",crossorigin: true});
+  const response = await fetch("https://gtdedge-hello-world.booking.com/echo", {method: "GET"});
   const movies = await response.json();
   console.log(movies);
 }
